@@ -5,30 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Booster Minute — Distributeurs de cartes à collectionner</title>
   <meta name="description" content="Installez une expérience de vente autonome de cartes à collectionner dans votre commerce.">
+  <meta name="theme-color" content="#3155ff">
+  <link rel="canonical" href="https://hizozo.github.io/booster-minute/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Booster Minute — Distributeurs de cartes à collectionner">
+  <meta property="og:description" content="Installez une expérience de vente autonome de cartes à collectionner dans votre commerce.">
+  <meta property="og:url" content="https://hizozo.github.io/booster-minute/">
+  <meta property="og:image" content="https://hizozo.github.io/booster-minute/machines/cardvend-hero.jpg">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg">
   <link rel="preload" as="image" href="machines/cardvend-hero.jpg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<a class="skip" href="#accueil">Aller au contenu</a>
 <main>
 
   <!-- ===== En-tête et navigation ===== -->
   <header class="top">
     <a class="logo" href="#accueil"><b>BM</b><span>BOOSTER<br>MINUTE</span></a>
-    <nav>
+    <nav id="menu-principal">
       <a href="#concept">Le concept</a>
       <a href="#potentiel">Votre potentiel</a>
       <a href="#machine">La machine</a>
       <a href="#acheter">Acheter</a>
       <a href="#faq">Questions</a>
+      <a class="mobileCta" href="#contact">Proposer mon emplacement <i aria-hidden="true">↗</i></a>
     </nav>
-    <a class="pill dark" href="#contact">Proposer mon emplacement <i>↗</i></a>
+    <a class="pill dark" href="#contact">Proposer mon emplacement <i aria-hidden="true">↗</i></a>
+    <button class="menuBtn" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-principal">
+      <span></span><span></span><span></span>
+    </button>
   </header>
 
   <!-- ===== Héro ===== -->
   <section class="hero" id="accueil">
     <div class="heroText">
-      <div class="label"><span>●</span> Le distributeur qui crée l’événement</div>
+      <div class="label"><span aria-hidden="true">●</span> Le distributeur qui crée l’événement</div>
       <h1>Des cartes.<br>Des clients.<br><em>Du passage.</em></h1>
       <p>Installez une expérience de vente autonome qui attire les collectionneurs et transforme un espace inutilisé en nouveau point d’intérêt.</p>
       <div class="actions">
@@ -43,7 +57,7 @@
     </div>
     <div class="heroImage">
       <div class="sun">OUVERT<br><b>24/7</b></div>
-      <img src="machines/cardvend-hero.jpg" alt="Distributeur autonome de cartes à collectionner">
+      <img src="machines/cardvend-hero.jpg" alt="Distributeur autonome de cartes à collectionner" width="800" height="800" fetchpriority="high" decoding="async">
       <div class="ticket">
         <small>NOUVEAU DANS VOTRE COMMERCE</small>
         <strong>LE BOOSTER<br>À PORTÉE DE MAIN</strong>
@@ -73,19 +87,19 @@
   <section class="journey">
     <article>
       <b>01</b>
-      <div class="journeyIcon">👀</div>
+      <div class="journeyIcon" aria-hidden="true">👀</div>
       <h3>La machine attire</h3>
       <p>Une présence visuelle forte transforme un simple passage en arrêt spontané.</p>
     </article>
     <article>
       <b>02</b>
-      <div class="journeyIcon">☝</div>
+      <div class="journeyIcon" aria-hidden="true">☝</div>
       <h3>Le client choisit</h3>
       <p>Un parcours tactile clair présente les produits disponibles en quelques secondes.</p>
     </article>
     <article>
       <b>03</b>
-      <div class="journeyIcon">⚡</div>
+      <div class="journeyIcon" aria-hidden="true">⚡</div>
       <h3>La vente se fait</h3>
       <p>Paiement autonome, distribution immédiate et aucune mobilisation de votre équipe.</p>
     </article>
@@ -109,7 +123,7 @@
         <input type="range" id="marge" min="1" max="15" value="5">
         <div><span>1 €</span><span>15 €</span></div>
       </div>
-      <div class="result">
+      <div class="result" aria-live="polite">
         <small>POTENTIEL MENSUEL INDICATIF</small>
         <strong id="potentiel-valeur">1 200 €</strong>
         <span id="potentiel-detail">8 ventes × 5 € × 30 jours</span>
@@ -122,7 +136,7 @@
   <section class="machine" id="machine">
     <div class="machineVisual">
       <div class="pinkBlock"></div>
-      <img src="machines/cardvend-white.jpg" alt="Machine Booster Minute avec écran tactile">
+      <img src="machines/cardvend-white.jpg" alt="Machine Booster Minute avec écran tactile" width="750" height="750" loading="lazy" decoding="async">
       <div class="tag">FORMAT<br><b>COMPACT</b></div>
     </div>
     <div class="machineInfo">
@@ -217,12 +231,12 @@
     <span class="overline">Les emplacements recherchés</span>
     <h2>Votre public aime découvrir ?<br><em>Alors parlons-nous.</em></h2>
     <div class="venueGrid">
-      <div><b>01</b><span>Centre commercial</span><i>↗</i></div>
-      <div><b>02</b><span>Cinéma</span><i>↗</i></div>
-      <div><b>03</b><span>Salle de jeux</span><i>↗</i></div>
-      <div><b>04</b><span>Bowling</span><i>↗</i></div>
-      <div><b>05</b><span>Commerce de proximité</span><i>↗</i></div>
-      <div><b>06</b><span>Lieu touristique</span><i>↗</i></div>
+      <a href="#contact"><b>01</b><span>Centre commercial</span><i aria-hidden="true">↗</i></a>
+      <a href="#contact"><b>02</b><span>Cinéma</span><i aria-hidden="true">↗</i></a>
+      <a href="#contact"><b>03</b><span>Salle de jeux</span><i aria-hidden="true">↗</i></a>
+      <a href="#contact"><b>04</b><span>Bowling</span><i aria-hidden="true">↗</i></a>
+      <a href="#contact"><b>05</b><span>Commerce de proximité</span><i aria-hidden="true">↗</i></a>
+      <a href="#contact"><b>06</b><span>Lieu touristique</span><i aria-hidden="true">↗</i></a>
     </div>
   </section>
 
