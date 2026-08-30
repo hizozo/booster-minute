@@ -1502,3 +1502,29 @@ footer .logo:hover b,
 .offer .overline {
   color: var(--ink);
 }
+
+/* ----- Photos des modèles dans la grille tarifs (sources Alibaba retouchées) ----- */
+.modelPhoto {
+  background: #fff;
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  aspect-ratio: 1;
+  margin-bottom: 18px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+.modelPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s;
+}
+.priceGrid article:hover .modelPhoto img {
+  transform: scale(1.04);
+}
+@media (prefers-reduced-motion: reduce) {
+  .modelPhoto img {
+    transition: none;
+  }
+}
