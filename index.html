@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booster Minute — Distributeurs de cartes à collectionner</title>
+  <meta name="description" content="Installez une expérience de vente autonome de cartes à collectionner dans votre commerce.">
+  <link rel="icon" href="favicon.svg">
+  <link rel="preload" as="image" href="machines/cardvend-hero.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+
+  <!-- ===== En-tête et navigation ===== -->
+  <header class="top">
+    <a class="logo" href="#accueil"><b>BM</b><span>BOOSTER<br>MINUTE</span></a>
+    <nav>
+      <a href="#concept">Le concept</a>
+      <a href="#potentiel">Votre potentiel</a>
+      <a href="#machine">La machine</a>
+      <a href="#acheter">Acheter</a>
+      <a href="#faq">Questions</a>
+    </nav>
+    <a class="pill dark" href="#contact">Proposer mon emplacement <i>↗</i></a>
+  </header>
+
+  <!-- ===== Héro ===== -->
+  <section class="hero" id="accueil">
+    <div class="heroText">
+      <div class="label"><span>●</span> Le distributeur qui crée l’événement</div>
+      <h1>Des cartes.<br>Des clients.<br><em>Du passage.</em></h1>
+      <p>Installez une expérience de vente autonome qui attire les collectionneurs et transforme un espace inutilisé en nouveau point d’intérêt.</p>
+      <div class="actions">
+        <a class="pill yellow" href="#contact">Étudier mon emplacement <i>→</i></a>
+        <a class="textLink" href="#concept">Comprendre en 60 secondes ↓</a>
+      </div>
+      <div class="checks">
+        <span>✓ Sans personnel dédié</span>
+        <span>✓ Paiement autonome</span>
+        <span>✓ Pilotage à distance</span>
+      </div>
+    </div>
+    <div class="heroImage">
+      <div class="sun">OUVERT<br><b>24/7</b></div>
+      <img src="machines/cardvend-hero.jpg" alt="Distributeur autonome de cartes à collectionner">
+      <div class="ticket">
+        <small>NOUVEAU DANS VOTRE COMMERCE</small>
+        <strong>LE BOOSTER<br>À PORTÉE DE MAIN</strong>
+        <span>COLLECTIONNER • JOUER • PARTAGER</span>
+      </div>
+      <div class="sticker">ÇA<br>VEND !</div>
+    </div>
+  </section>
+
+  <!-- ===== Bandeau défilant ===== -->
+  <div class="ticker">
+    <span>BOOSTERS ✦ DECKS ✦ COFFRETS ✦ CARTES GRADÉES ✦ PRODUITS MYSTÈRE ✦</span>
+    <span>BOOSTERS ✦ DECKS ✦ COFFRETS ✦ CARTES GRADÉES ✦ PRODUITS MYSTÈRE ✦</span>
+  </div>
+
+  <!-- ===== Le constat ===== -->
+  <section class="problem" id="concept">
+    <div class="number">01</div>
+    <div>
+      <span class="overline">Le constat</span>
+      <h2>Chaque mètre carré peut faire <u>venir</u> et <u>revenir.</u></h2>
+    </div>
+    <p>Les collectionneurs recherchent l’achat immédiat, la nouveauté et l’émotion de l’ouverture. Booster Minute place cette expérience directement sur leur trajet.</p>
+  </section>
+
+  <!-- ===== Parcours client en 3 étapes ===== -->
+  <section class="journey">
+    <article>
+      <b>01</b>
+      <div class="journeyIcon">👀</div>
+      <h3>La machine attire</h3>
+      <p>Une présence visuelle forte transforme un simple passage en arrêt spontané.</p>
+    </article>
+    <article>
+      <b>02</b>
+      <div class="journeyIcon">☝</div>
+      <h3>Le client choisit</h3>
+      <p>Un parcours tactile clair présente les produits disponibles en quelques secondes.</p>
+    </article>
+    <article>
+      <b>03</b>
+      <div class="journeyIcon">⚡</div>
+      <h3>La vente se fait</h3>
+      <p>Paiement autonome, distribution immédiate et aucune mobilisation de votre équipe.</p>
+    </article>
+  </section>
+
+  <!-- ===== Calculateur de potentiel (interactif, voir script.js) ===== -->
+  <section class="calculator" id="potentiel">
+    <div class="calcIntro">
+      <span class="overline">Projetez-vous</span>
+      <h2>Quel potentiel pour votre emplacement ?</h2>
+      <p>Ajustez les hypothèses selon votre fréquentation. Cette simulation est indicative : elle vous aide à dimensionner l’opportunité sans promesse de résultat.</p>
+    </div>
+    <div class="calcCard">
+      <div class="field">
+        <label for="ventes">Ventes estimées par jour <strong id="ventes-valeur">8</strong></label>
+        <input type="range" id="ventes" min="1" max="30" value="8">
+        <div><span>1</span><span>30</span></div>
+      </div>
+      <div class="field">
+        <label for="marge">Marge estimée par vente <strong id="marge-valeur">5 €</strong></label>
+        <input type="range" id="marge" min="1" max="15" value="5">
+        <div><span>1 €</span><span>15 €</span></div>
+      </div>
+      <div class="result">
+        <small>POTENTIEL MENSUEL INDICATIF</small>
+        <strong id="potentiel-valeur">1 200 €</strong>
+        <span id="potentiel-detail">8 ventes × 5 € × 30 jours</span>
+      </div>
+      <a class="pill yellow wide" href="#contact">Obtenir une étude réelle <i>→</i></a>
+    </div>
+  </section>
+
+  <!-- ===== La machine ===== -->
+  <section class="machine" id="machine">
+    <div class="machineVisual">
+      <div class="pinkBlock"></div>
+      <img src="machines/cardvend-white.jpg" alt="Machine Booster Minute avec écran tactile">
+      <div class="tag">FORMAT<br><b>COMPACT</b></div>
+    </div>
+    <div class="machineInfo">
+      <span class="overline">La solution</span>
+      <h2>Une boutique autonome, dans moins de deux mètres carrés.</h2>
+      <p>Visible, simple à utiliser et modulable, la machine s’intègre dans les lieux où vos clients attendent, circulent ou se divertissent.</p>
+      <ul>
+        <li><b>01</b><span><strong>Grand écran tactile</strong><small>Sélection claire et expérience intuitive</small></span></li>
+        <li><b>02</b><span><strong>Paiement sans contact</strong><small>Carte et portefeuille mobile selon configuration</small></span></li>
+        <li><b>03</b><span><strong>Stock suivi à distance</strong><small>Réassorts mieux planifiés</small></span></li>
+        <li><b>04</b><span><strong>Habillage personnalisable</strong><small>Une présence adaptée à votre emplacement</small></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== Acheter — modèles et tarifs ===== -->
+  <section class="shop" id="acheter">
+    <div class="shopHead">
+      <div>
+        <span class="overline">Devenez propriétaire</span>
+        <h2>Achetez votre machine.<br><em>Développez votre réseau.</em></h2>
+      </div>
+      <p>Vous préférez exploiter vous-même vos emplacements ? Choisissez le format adapté à votre passage et construisez une activité de distribution autonome de cartes à collectionner.</p>
+    </div>
+    <div class="priceGrid">
+      <article>
+        <div class="modelNo">01 / COMPACT</div>
+        <h3>Booster Mini</h3>
+        <p>Le format d’entrée idéal pour tester un emplacement ou équiper une petite surface.</p>
+        <div class="price"><small>À PARTIR DE</small><strong>2 850 €</strong><span>HT</span></div>
+        <ul>
+          <li>Jusqu’à 120 boosters</li>
+          <li>8 sélections</li>
+          <li>Écran tactile 21,5 pouces</li>
+          <li>Format mural ou sur socle</li>
+        </ul>
+        <a href="#contact">Demander un devis <b>→</b></a>
+      </article>
+      <article class="popular">
+        <div class="badge">LE PLUS CHOISI</div>
+        <div class="modelNo">02 / ESSENTIEL</div>
+        <h3>Booster Murale</h3>
+        <p>Le meilleur équilibre entre visibilité, capacité et emprise dans un commerce.</p>
+        <div class="price"><small>À PARTIR DE</small><strong>3 550 €</strong><span>HT</span></div>
+        <ul>
+          <li>Jusqu’à 160 boosters</li>
+          <li>10 sélections</li>
+          <li>Écran tactile 32 pouces</li>
+          <li>Format mural ou sur socle</li>
+        </ul>
+        <a href="#contact">Demander un devis <b>→</b></a>
+      </article>
+      <article>
+        <div class="modelNo">03 / CAPACITÉ</div>
+        <h3>Booster Max</h3>
+        <p>Une configuration renforcée pour les lieux à forte rotation et les assortiments étendus.</p>
+        <div class="price"><small>À PARTIR DE</small><strong>4 250 €</strong><span>HT</span></div>
+        <ul>
+          <li>Jusqu’à 240 boosters</li>
+          <li>15 sélections</li>
+          <li>Écran tactile 32 pouces</li>
+          <li>Format mural ou sur socle</li>
+        </ul>
+        <a href="#contact">Demander un devis <b>→</b></a>
+      </article>
+      <article>
+        <div class="modelNo">04 / TOTEM</div>
+        <h3>Booster Totem</h3>
+        <p>La solution autonome grand format pour galeries marchandes et lieux de loisirs.</p>
+        <div class="price"><small>À PARTIR DE</small><strong>5 000 €</strong><span>HT</span></div>
+        <ul>
+          <li>Jusqu’à 456 boosters</li>
+          <li>24 sélections</li>
+          <li>Écran tactile 43 pouces</li>
+          <li>Installation autoportante</li>
+        </ul>
+        <a href="#contact">Demander un devis <b>→</b></a>
+      </article>
+    </div>
+    <div class="shopNote">
+      <b>Options disponibles</b>
+      <span>Socle autoportant — 450 € HT</span>
+      <span>Habillage personnalisé — dès 225 € HT</span>
+      <span>Spirales adaptées aux boosters</span>
+      <span>Mise en service accompagnée</span>
+    </div>
+    <p class="legalPrice">Capacités présentées pour une configuration TCG standard et à confirmer sur le devis final. Prix de départ hors taxes. Livraison, importation, terminal de paiement, habillage, installation et éventuels abonnements logiciels établis selon le pays et la configuration finale.</p>
+  </section>
+
+  <!-- ===== Emplacements recherchés ===== -->
+  <section class="venues">
+    <span class="overline">Les emplacements recherchés</span>
+    <h2>Votre public aime découvrir ?<br><em>Alors parlons-nous.</em></h2>
+    <div class="venueGrid">
+      <div><b>01</b><span>Centre commercial</span><i>↗</i></div>
+      <div><b>02</b><span>Cinéma</span><i>↗</i></div>
+      <div><b>03</b><span>Salle de jeux</span><i>↗</i></div>
+      <div><b>04</b><span>Bowling</span><i>↗</i></div>
+      <div><b>05</b><span>Commerce de proximité</span><i>↗</i></div>
+      <div><b>06</b><span>Lieu touristique</span><i>↗</i></div>
+    </div>
+  </section>
+
+  <!-- ===== Parcours de lancement ===== -->
+  <section class="offer">
+    <div>
+      <span class="overline">Un parcours simple</span>
+      <h2>De votre emplacement aux premières ventes.</h2>
+    </div>
+    <ol>
+      <li><b>1</b><span><strong>Vous présentez le lieu</strong><small>Ville, activité, fréquentation et espace disponible.</small></span></li>
+      <li><b>2</b><span><strong>Nous évaluons le potentiel</strong><small>Profil du public, visibilité et configuration recommandée.</small></span></li>
+      <li><b>3</b><span><strong>Nous préparons le lancement</strong><small>Machine, habillage, assortiment et mise en service.</small></span></li>
+    </ol>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div>
+      <span class="overline">Avant de vous lancer</span>
+      <h2>Les réponses,<br>sans détour.</h2>
+    </div>
+    <div>
+      <details open>
+        <summary>La machine prend-elle beaucoup de place ?<b>+</b></summary>
+        <p>Non. Son format vertical exploite une petite surface au sol tout en restant très visible dans une zone de passage.</p>
+      </details>
+      <details>
+        <summary>Mon équipe devra-t-elle gérer les ventes ?<b>+</b></summary>
+        <p>Non. La sélection et le paiement sont autonomes. Le suivi des ventes et du stock facilite ensuite les réassorts.</p>
+      </details>
+      <details>
+        <summary>Peut-on adapter les produits proposés ?<b>+</b></summary>
+        <p>Oui. Les compartiments peuvent accueillir différents formats : boosters, decks, coffrets compacts et produits mystère.</p>
+      </details>
+      <details>
+        <summary>La machine peut-elle être personnalisée ?<b>+</b></summary>
+        <p>Oui. L’habillage visuel peut être adapté à votre lieu, votre public et votre identité.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="contact" id="contact">
+    <div class="contactBurst">GO!</div>
+    <span class="overline">Votre emplacement peut être le prochain</span>
+    <h2>Faisons venir les<br><em>collectionneurs.</em></h2>
+    <p>Préparez trois informations : votre ville, le type de commerce et le passage quotidien estimé. Nous pourrons rapidement qualifier l’opportunité.</p>
+    <a class="pill yellow mega" href="mailto:?subject=Étude%20d’emplacement%20Booster%20Minute">Je propose mon emplacement <i>→</i></a>
+    <small>Réponse personnalisée • Sans engagement • Étude gratuite</small>
+  </section>
+
+  <!-- ===== Pied de page ===== -->
+  <footer>
+    <a class="logo inverse" href="#accueil"><b>BM</b><span>BOOSTER<br>MINUTE</span></a>
+    <p>La distribution nouvelle génération<br>pour les cartes à collectionner.</p>
+    <small>Marque indépendante, non affiliée aux éditeurs ou détenteurs de licences des jeux de cartes présentés.</small>
+  </footer>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
